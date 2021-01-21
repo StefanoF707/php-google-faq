@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 ?>
 <!DOCTYPE html>
@@ -10,18 +10,24 @@
     <title>Faq Google</title>
 </head>
 <body>
-    
+
+    <!-- navbar -->
     <header>
-
+        
     </header>
+    <!-- /navbar -->
 
+    <!-- Q & A -->
     <main>
 
     </main>
+    <!-- /Q & A -->
 
+    <!-- info & lingue -->
     <footer>
-        
+
     </footer>
-    
+    <!-- /info & lingue -->
+
 </body>
 </html>
