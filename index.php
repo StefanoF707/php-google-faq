@@ -41,6 +41,14 @@
         ]
     ];
 
+    $links = [
+        "Introduzione",
+        "Norme sulla privacy",
+        "Termini di servizio",
+        "Tecnologie",
+        "Domande Frequenti",
+    ];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +62,29 @@
 
     <!-- navbar -->
     <header>
+        <nav class="header-top">
+            <div class="header-top-left">
+                <img src="img/googleLogo.png" alt="Logo google">
+                <a href="#">Privacy e termini</a>
+            </div>
+            <div class="header-top-right">
+                <a href="#">
+                    <img src="img/userIcon.png" alt="Avatar utente">
+                </a>
+            </div>
+        </nav>
 
+        <nav class="header-bottom">
+            <ul class="list-inline">
+            <?php foreach ($links as $link) { ?>
+                <li>
+                    <a href="#">
+                        <?php echo $link ?>
+                    </a>
+                </li>
+            <?php } ?>
+            </ul>
+        </nav>
     </header>
     <!-- /navbar -->
 
