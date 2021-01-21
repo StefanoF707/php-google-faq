@@ -49,6 +49,36 @@
         "Domande Frequenti",
     ];
 
+    $footerLinks = [
+        "Google",
+        "Tutto su Google",
+        "Privacy",
+        "Termini",
+    ];
+
+    $languages = [
+        [
+            'lan' => "Italiano",
+            'sign' => "it",
+        ],
+        [
+            'lan' => "English",
+            'sign' => "en",
+        ],
+        [
+            'lan' => "François",
+            'sign' => "fr",
+        ],
+        [
+            'lan' => "Deutsch",
+            'sign' => "de",
+        ],
+        [
+            'lan' => "Norway",
+            'sign' => "no",
+        ],
+    ];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,7 +150,25 @@
 
     <!-- info & lingue -->
     <footer>
+        <div class="footer-left">
+            <ul class="list-inline">
+                <?php foreach ($footerLinks as $footerLink) { ?>
+                    <li>
+                        <a href="#">
+                            <?php echo $footerLink ?>
+                        </a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
 
+        <div class="footer-right">
+            <select class="" name="">
+                <?php foreach ($languages as $language) { ?>
+                    <option value="<?php echo $language["sign"] ?>"><?php echo $language["lan"] ?></option>
+                <?php } ?>
+            </select>
+        </div>
     </footer>
     <!-- /info & lingue -->
 

@@ -87,3 +87,25 @@ main {
 .answer > a {
     color: #3367d6;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 100px;
+    border-top: 1px solid #ede6e6;
+    background: #F5F5F5;
+}
+
+.footer-left li {
+    font-size: 12px;
+    padding-right: 5px;
+    margin-right: 5px;
+    color:  #5f6368;
+    vertical-align: middle;
+    position: relative;
+}
+.footer-left li > a {
+    font-weight: 400;
+}
